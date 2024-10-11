@@ -28,7 +28,9 @@ const EmployeeService = () => {
                         </p>
                         <p className={styles.quotes}>”</p>
                     </div>
-                    <img src={img} alt='' width={420} />
+                    <div className={styles.img}>
+                        <img src={img} alt='' width={420} />
+                    </div>
                 </div>
             </div>
             <div className={classNames(styles.sec3, commonStyles.flexCenter)}>

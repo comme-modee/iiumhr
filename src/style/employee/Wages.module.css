@@ -256,7 +256,8 @@
 }
 .sec6 > .contentContainer > .img {
     width: 100%;
-    background: url('../../assets/img/employee/wages003.png') no-repeat right/contain;
+    border: 1px solid #929292;
+    background: url('../../assets/img/employee/wages003.png') no-repeat left/cover;
 }
 .sec6 > .contentContainer > .content > div {
     display: flex;
@@ -479,6 +480,149 @@
 
 
 
+/* 태블릿 */
+
+@media screen and (max-width: 768px) {
+    .sec1 {
+        padding: 100px 20px;
+    }
+    .sec1 > .title {
+        font-size: 1.6rem;
+    }
+    .sec1 > .description {
+        font-size: 1rem;
+    }
+
+    .sec2 {
+        padding: 0px 20px 40px 20px;
+    }
+    .sec2 > .title {
+        font-size: 1.6rem;
+    }
+    .sec2 > .description {
+        font-size: 1rem;
+    }
+
+    .sec3 {
+        height: 250px;
+    }
+    .sec3 > p {
+        font-size: 1.6rem;
+    }
+
+    .sec4 {
+        padding: 40px 20px;
+    }
+    .sec4::before {
+        bottom: -30px;
+        width: 60px;
+        height: 60px;
+    }
+    .sec4 > .title {
+        font-size: 1.6rem;
+    }
+    .sec4 > div > .graph p {
+        font-size: 1.2rem;
+    }
+    .sec4 > div > .graph > .type1 > .line {
+        height: 40px;
+    }
+    .sec4 > div > .graph > .type3 > div:last-child > p::before {
+        left: 47.5%;
+    }
+
+    .sec5 {
+        padding: 80px 20px 0px 20px;
+    }
+    .sec5 > .title {
+        font-size: 1.6rem;
+    }
+    .sec5 > .description {
+        border-radius: 14px;
+        font-size: 1.2rem;
+        padding: 20px;
+        margin: 20px 0 60px 0;
+    }
+
+    .sec6 {
+        margin-bottom: 60px;
+        padding: 0px 20px;
+    }
+    .sec6 > .title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .sec6 > .contentContainer {
+        height: 360px;
+    }
+    .sec6 > .contentContainer {
+        gap: 10px;
+    }
+    .sec6 > .contentContainer > .content {
+        gap: 10px;
+    }
+    .sec6 > .contentContainer > .content > div {
+        gap: 14px;
+    }
+    .sec6 > .contentContainer > .content > div > .icon {
+        width: 60px;
+        height: 60px;
+    }
+    .sec6 > .contentContainer > .content > div > .text > .title {
+        font-size: 1.2rem;
+        padding-bottom: 4px;
+    }
+    .sec6 > .contentContainer > .content > div > .text > .description {
+        font-size: 1rem;
+    }
+
+    .sec7 {
+        padding: 0px 10px;
+        margin-bottom: 60px;
+    }
+    .sec7 > .title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        padding: 0px 10px;
+    }
+
+    .sec7 > .table1 > .header > p,
+    .sec7 > .table2 > .header > p {
+        font-size: 1.1rem;
+    }
+    .sec7 > .table1 > .row p,
+    .sec7 > .table2 > .row p {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+    .sec7 > .table1 > div:nth-child(2) > div > p:first-child {
+        left: 8px;
+    }
+    .sec7 > .table1 > div:nth-child(2) > div > p:last-child {
+        right: 8px;
+    }
+    .sec7 > .table1 > div:nth-child(2) > div > span {
+        transform: rotate(18deg) translate(7px, 38px);
+    }
+    .sec7 > .table2 > div:last-child {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 540px) {
+    .sec6 > .contentContainer {
+        flex-direction: column;
+        height: auto;
+    }
+    .sec6 > .contentContainer > .img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
 /* 모바일 */
 
 @media screen and (max-width: 480px) {
@@ -492,9 +636,6 @@
         font-size: 4vw;
     }
 
-    .sec2 {
-        padding: 0px 20px 60px 20px;
-    }
     .sec2 > .title {
         font-size: 7vw;
     }
@@ -509,11 +650,6 @@
         font-size: 7vw;
     }
 
-    .sec4::before {
-        bottom: -30px;
-        width: 60px;
-        height: 60px;
-    }
     .sec4 > .title {
         font-size: 7vw;
     }
@@ -561,59 +697,21 @@
         left: 62.2%;
     }
 
-    .sec5 {
-        padding: 80px 20px 0px 20px;
-    }
     .sec5 > .title {
         font-size: 7vw;
     }
     .sec5 > .description {
-        border-radius: 14px;
         font-size: 1rem;
-        padding: 20px;
-        margin: 20px 0 60px 0;
     }
 
-    .sec6 {
-        margin-bottom: 60px;
-        padding: 0px 20px;
-    }
     .sec6 > .title {
         font-size: 7vw;
-        margin-bottom: 20px;
-    }
-    .sec6 > .contentContainer {
-        flex-direction: column;
-        height: auto;
-    }
-    .sec6 > .contentContainer > .img {
-        width: 100%;
-        height: calc(100vw - 40px);
-    }
-    .sec6 > .contentContainer > .content > div {
-        gap: 14px;
-    }
-    .sec6 > .contentContainer > .content > div > .icon {
-        width: 60px;
-        height: 60px;
-    }
-    .sec6 > .contentContainer > .content > div > .text > .title {
-        font-size: 1.2rem;
-        padding-bottom: 4px;
-    }
-    .sec6 > .contentContainer > .content > div > .text > .description {
-        font-size: 1rem;
     }
 
-    .sec7 {
-        padding: 0px 10px;
-        margin-bottom: 60px;
-    }
     .sec7 > .title {
         font-size: 7vw;
-        margin-bottom: 20px;
-        padding: 0px 10px;
     }
+
     /* 테이블 공통 */
     .sec7 > .table1 > .header > div > p,
     .sec7 > .table2 > .header > div > p {
@@ -671,8 +769,5 @@
     }
     .sec7 > .table2 > .row > p:last-child {
         width: 30%;
-    }
-    .sec7 > .table2 > div:last-child {
-        font-size: 1rem;
     }
 }

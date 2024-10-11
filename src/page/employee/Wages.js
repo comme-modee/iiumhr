@@ -12,7 +12,7 @@ const Wages = () => {
         <div>
             <div className={classNames(styles.sec1, commonStyles.flexCenter)}>
                 <p className={styles.title}>
-                    <span>‘여러분의 가치를 소중하게 보호’</span>하는 노무법인 <span>이음</span><br />
+                    <span>‘여러분의 가치를 소중하게 보호’</span> 하는 노무법인 <span>이음</span><br />
                 </p>
                 <p className={styles.description}>
                     임금을 제대로 받지 못했을 때 법과 제도적으로 받을 수 있습니다.

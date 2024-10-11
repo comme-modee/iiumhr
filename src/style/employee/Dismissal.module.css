@@ -243,17 +243,17 @@
 
 
 
-/* 모바일 */
+/* 태블릿 */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .sec1 {
-        padding: 80px 20px;
+        padding: 100px 20px;
     }
     .sec1 > .title {
-        font-size: 7vw;
+        font-size: 1.6rem;
     }
     .sec1 > .description {
-        font-size: 4vw;
+        font-size: 1rem;
     }
 
     .sec2 {
@@ -273,6 +273,112 @@
         padding: 0px 0px 0px 20px;
         margin-bottom: 10px;
     }
+    .sec2 > .boxContainer > .box p:nth-child(1) {
+        font-size: 1.6rem;
+    }
+    .sec2 > .boxContainer > .box p:nth-child(2),
+    .sec2 > .boxContainer > .box ul li,
+    .sec2 > .boxContainer > .row > .interview > p {
+        font-size: 1rem;
+        word-break: keep-all;
+    }
+    .sec2 > .boxContainer > .row > .interview > p::before {
+        top: -8px;
+        left: -16px;
+        font-size: 2rem;
+    }
+    .sec2 > .boxContainer > .row > .interview > p > span {
+        font-size: 2rem;
+    }
+    .sec2 > .boxContainer > .box:nth-child(3) {
+        gap: 10px;
+    }
+
+    .sec3 {
+        word-break: keep-all;
+        padding: 70px 0px;
+        font-size: 1.6rem;
+    }
+
+    .sec4 {
+        padding: 60px 20px 220px 20px;
+    }
+    .sec4 > div > .title {
+        font-size: 1.6rem;
+        padding-bottom: 30px;
+    }
+    .sec4 > div > .graph {
+        font-size: 1.2rem;
+    }
+    .sec4 > div > .graph > .step1 {
+        padding-bottom: 20px;
+    }
+    .sec4 > div > .graph > .step1 > p {
+        width: 220px;
+    }
+    .sec4 > div > .graph > .step1 > p:first-child::before {
+        right: 20px;
+    }
+    .sec4 > div > .graph > .step2 {
+        gap: 80px;
+    }
+    .sec4 > div > .graph > .step2 > div > p {
+        width: 220px;
+        margin-bottom: 20px;
+    }
+    .sec4 > div > .graph > .step1 > p:nth-child(2),
+    .sec4 > div > .graph > .step1 > p:nth-child(3) { 
+        margin-bottom: 20px;
+    }
+    .sec4 > div > .graph > .step2 .step3 {
+        gap: 40px;
+    }
+    .sec4 > div > .graph > .step2 .step3 > div > p {
+        width: 180px;
+    }
+    .sec4 > div > .graph > .step2 .step3 > div:nth-child(2) > p:first-child::before {
+        right: 20px;
+    }
+
+    /* 점선 작업 */
+    .sec4 > div > .graph > .step1 > .leftLine {
+        height: 150px;
+    }
+    .sec4 > div > .graph > .step1 > .rightLine {
+        height: 150px;
+    }
+    .sec4 > div > .graph > .step2 > div > .leftLine {
+        left: -25px;
+        bottom: -36px;
+        width: 25px;
+        height: 80px;
+    }
+    .sec4 > div > .graph > .step2 > div > .rightLine {
+        right: -25px;
+        bottom: -36px;
+        width: 25px;
+        height: 80px;
+    }
+}
+
+
+
+
+/* 모바일 */
+
+@media screen and (max-width: 480px) {
+    .sec1 {
+        padding: 80px 20px;
+    }
+    .sec1 > .title {
+        font-size: 7vw;
+    }
+    .sec1 > .description {
+        font-size: 4vw;
+    }
+
+    
+    
     .sec2 > .boxContainer > .row > .interview:nth-child(1) {
         padding-left: 10px;
     }
@@ -290,19 +396,10 @@
     .sec2 > .boxContainer > .box ul li,
     .sec2 > .boxContainer > .row > .interview > p {
         font-size: 4.2vw;
-        word-break: keep-all;
     }
     .sec2 > .boxContainer > .row {
         flex-direction: column;
         gap: 0px;
-    }
-    .sec2 > .boxContainer > .row > .interview > p::before {
-        top: -8px;
-        left: -16px;
-        font-size: 2rem;
-    }
-    .sec2 > .boxContainer > .row > .interview > p > span {
-        font-size: 2rem;
     }
     .sec2 > .boxContainer > .box:nth-child(3) {
         flex-direction: column;
@@ -321,19 +418,14 @@
     
 
     .sec3 {
-        word-break: keep-all;
-        padding: 70px 0px;
         font-size: 7vw;
     }
 
     .sec4 {
         padding: 60px 20px 180px 20px;
-        background-color: var(--blue);
     }
     .sec4 > div > .title {
-        font-family: var(--font-B);
         font-size: 7vw;
-        padding-bottom: 30px;
     }
     .sec4 > div > .graph {
         font-size: 1rem;
@@ -386,15 +478,9 @@
         height: 120px;
     }
     .sec4 > div > .graph > .step2 > div > .leftLine {
-        left: -25px;
         bottom: -30px;
-        width: 25px;
-        height: 80px;
     }
     .sec4 > div > .graph > .step2 > div > .rightLine {
-        right: -25px;
         bottom: -30px;
-        width: 25px;
-        height: 80px;
     }
 }

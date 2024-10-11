@@ -37,4 +37,5 @@ body {
   overflow-x: hidden;
   text-align: center;
   height: var(--vh);
+  margin-top: 90px;
 }

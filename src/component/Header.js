@@ -22,8 +22,8 @@ const Header = ({ type }) => {
 
     return (
         <React.Fragment>
-            <SideMenu sideMenu={sideMenu} />
             <div className={headerStyles[type === 'main' ? 'mainHeader' : 'header']}>
+                <SideMenu sideMenu={sideMenu} />
                 <img src={Logo} alt='로고' width={type === 'main' ? 120 : 100} onClick={() => navigate('/')} />
                 <div className={navbarStyles.menuBtn}
                     onClick={() => {

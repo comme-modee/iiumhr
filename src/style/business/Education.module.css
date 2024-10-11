@@ -217,6 +217,69 @@
     .sec1 > .description {
         font-size: 1rem;
     }
+
+    .sec2 {
+        padding: 20px 0px 0px 0px;
+    }
+    .sec2 > .title {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+    .sec2 > .process > .box > p:nth-child(1) {
+        font-size: 1.4rem;
+    }
+    .sec2 > .process > .box > p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+    .sec2 > .process > .box > p:nth-child(3) {
+        font-size: 1.1rem;
+    }
+
+    .sec3 {
+        height: 300px;
+    }
+
+    .sec4 {
+        padding: 60px 0px;
+    }
+    .sec4::before {
+        bottom: -30px;
+        width: 60px;
+        height: 60px;
+    }
+    .sec4 > div > .title {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+    .sec4 > div > .contentContainer {
+        gap: 20px;
+        justify-content: center;
+    }
+    .sec4 > div > .contentContainer > .content {
+        width: 200px;
+        height: 200px;
+        font-size: 1.2rem;
+    }
+    .sec4 > div > .contentContainer > .content:nth-child(1) > img { width: 60px; }
+    .sec4 > div > .contentContainer > .content:nth-child(2) > img { width: 70px; }
+    .sec4 > div > .contentContainer > .content:nth-child(3) > img { width: 60px; }
+    .sec4 > div > .contentContainer > .content:nth-child(4) > img { width: 40px; }
+    .sec4 > div > .contentContainer > .content:nth-child(5) > img { width: 60px; transform: translateY(6px); }
+    .sec4 > div > .contentContainer > .content:nth-child(6) > img { width: 50px; }
+
+    .sec5 {
+        padding: 80px 20px 60px 20px;
+    }
+    .sec5 > div > .title {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+    .sec5 > div > .boxContainer {
+        gap: 10px;
+    }
+    .sec5 > div > .boxContainer > div {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -235,13 +298,9 @@
         font-size: 4vw;
     }
 
-    .sec2 {
-        padding: 20px 0px 0px 0px;
-    }
     .sec2 > .title {
         font-size: 7vw;
         line-height: 10vw;
-        padding-bottom: 20px;
     }
     .sec2 > .title > span {
         display: block;
@@ -291,15 +350,9 @@
         height: 200px;
     }
 
-    .sec4::before {
-        bottom: -30px;
-        width: 60px;
-        height: 60px;
-    }
     .sec4 > div > .title {
         font-size: 7vw;
         line-height: 10vw;
-        padding-bottom: 20px;
     }
     .sec4 > div > .title > span {
         display: block;
@@ -320,13 +373,9 @@
     .sec4 > div > .contentContainer > .content:nth-child(5) > img { width: 50px; transform: translateY(4px); }
     .sec4 > div > .contentContainer > .content:nth-child(6) > img { width: 40px; }
 
-    .sec5 {
-        padding: 80px 20px 60px 20px;
-    }
     .sec5 > div > .title {
         font-size: 7vw;
         line-height: 10vw;
-        padding-bottom: 20px;
         word-break: keep-all;
     }
     .sec5 > div > .boxContainer {

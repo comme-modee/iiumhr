@@ -251,6 +251,79 @@
 
 
 
+/* 태블릿 */
+
+@media screen and (max-width: 768px) {
+    .sec1 {
+        padding: 100px 20px;
+    }
+    .sec1 > .title {
+        font-size: 1.6rem;
+    }
+    .sec1 > .description {
+        font-size: 1rem;
+    }
+
+    .sec2 > .contentContainer {
+        height: 300px;
+        gap: 20px;
+    }
+    .sec2 > .contentContainer > .text > div > .title {
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+    }
+    .sec2 > .contentContainer > .text > div > .description {
+        font-size: 1rem;
+        padding-right: 10px;
+    }
+    .sec2 > .contentContainer > .text > div > .description > p {
+        display: inline;
+        padding-right: 4px;
+    }
+
+    .sec3 {
+        padding: 60px 10px;
+    }
+    .sec3::before {
+        bottom: -30px;
+        width: 60px;
+        height: 60px;
+    }
+    .sec3 > div > .title {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+    .sec3 > div > .typeContainer {
+        gap: 16px;
+    }
+    .sec3 > div > .typeContainer > .type {
+        padding: 16px 8px;
+    }
+    .sec3 > div > .typeContainer > .type > p {
+        font-size: 1.2rem;
+    }
+
+    .sec4 {
+        padding: 90px 20px 60px 20px;
+    }
+    .sec4 > .title {
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+    }
+    .sec4 > .graph p {
+        font-size: 1.2rem;
+    }
+    .sec4 > .graph .smallText {
+        font-size: 1.1rem;
+    }
+    .sec4 > .graph > .lastSmallText {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
 /* 모바일 */
 
 @media screen and (max-width: 480px) {
@@ -293,23 +366,10 @@
         padding-right: 4px;
     }
 
-    .sec3 {
-        padding: 60px 10px;
-    }
-    .sec3::before {
-        bottom: -30px;
-        width: 60px;
-        height: 60px;
-    }
     .sec3 > div > .title {
         font-size: 6vw;
-        padding-bottom: 20px;
     }
     .sec3 > div > .typeContainer {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 12px;
     }
     .sec3 > div > .typeContainer > .type {
@@ -329,7 +389,6 @@
     }
     .sec4 > .title {
         font-size: 7vw;
-        padding-bottom: 20px;
     }
     .sec4 > .graph p {
         font-size: 1rem;

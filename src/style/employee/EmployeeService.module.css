@@ -19,7 +19,7 @@
 
 
 .sec2 {
-    height: 460px;
+    padding: 0px 20px;
 }
 .sec2 > div {
     display: flex;
@@ -43,13 +43,20 @@
     font-family: var(--font-B);
     line-height: 2.6rem;
     padding-bottom: 16px;
+    white-space: nowrap;
 }
 .sec2 > div > .description {
     color: var(--gray02);
     font-size: 1.2rem;
 }
-.sec2 > div > img {
+.sec2 > div > .img {
     padding-top: 30px;
+}
+.sec2 > div > .img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
 }
 
 
@@ -106,6 +113,75 @@
 
 
 
+/* 태블릿 */
+
+@media screen and (max-width: 768px) {
+    .sec1 {
+        padding: 100px 20px;
+    }
+    .sec1 > .title {
+        font-size: 1.6rem;
+    }
+    .sec1 > .description {
+        font-size: 1rem;
+    }
+
+    .sec2 > div > .title {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .sec2 > div > .img {
+        padding-top: 10px;
+    }
+
+    .sec3 {
+        padding: 60px 10px;
+    }
+    .sec3 > div > .title {
+        font-size: 1.6rem;
+        padding: 0px 0px 30px 0px;
+    }
+    .sec3 > div > .description {
+        font-size: 1.2rem;
+    }
+    .sec3 > div > .category {
+        gap: 10px;
+    }
+    .sec3 > div > .category > div > .content > p:nth-child(1) {
+        font-size: 1rem;
+    }
+    .sec3 > div > .category > div > .content > p:nth-child(2) { 
+        font-size: 0.75rem;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .sec2 {
+        padding: 20px 20px 0px 20px;
+    }
+    .sec2 > div {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .sec2 > div > .title {
+        white-space: normal;
+        word-break: keep-all;
+        padding-bottom: 0px;
+    }
+    .sec2 > div > .img {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+    .sec2 > div > .img > img {
+        transform: translateY(6px);
+    }
+}
+
+
+
 /* 모바일 */
 
 @media screen and (max-width: 480px) {
@@ -126,41 +202,21 @@
         font-size: 4vw;
     }
 
-    .sec2 {
-        padding: 30px 20px 0px 20px;
-        height: auto;
-    }
-    .sec2 > div {
-        flex-direction: column;
-        gap: 0px;
-    }
     .sec2 > div > .title {
         font-size: 6.2vw;
-        word-break: keep-all;
-        padding-bottom: 0px;
     }
     .sec2 > div > .title > p {
         line-height: 9vw;
     }
-    .sec2 > div > img {
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 0px;
-    }
 
-    .sec3 {
-        padding: 60px 20px;
-    }
     .sec3 > div > .title {
         font-size: 6vw;
-        padding: 4px 0px 30px 0px;
     }
     .sec3 > div > .description {
         font-size: 4.5vw;
     }
     .sec3 > div > .category {
         flex-direction: column;
-        gap: 14px;
     }
     .sec3 > div > .category > div {
         display: flex;
@@ -178,12 +234,8 @@
         height: 100%;
         padding: 0px 30px 0px 0px;
     }
-    .sec3 > div > .category > div > .content > p:nth-child(1) {
-        font-size: 1rem;
-        padding-bottom: 0px;
-    }
+    .sec3 > div > .category > div > .content > p:nth-child(1),
     .sec3 > div > .category > div > .content > p:nth-child(2) { 
-        font-size: 0.75rem;
         padding-bottom: 0px;
     }
 }
